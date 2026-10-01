@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>El Grito | Mexican Restaurant, Dublin</title>
+  <meta name="description" content="Real Mexican food. Loud flavours. El Grito, 20 Mountjoy Square East, Dublin. Vegetarian and gluten-free options.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="cursor" aria-hidden="true"></div>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="grito" viewBox="0 0 300 300">
+        <g class="tail"><path d="M236 214c40-6 56-40 40-64" fill="none" stroke="#f26b21" stroke-width="16" stroke-linecap="round"/><circle cx="276" cy="150" r="10" fill="#e8478b"/></g>
+        <g class="body">
+          <ellipse cx="140" cy="226" rx="96" ry="58" fill="#f6b800" stroke="#2b1a3b" stroke-width="5"/>
+          <g fill="#d62839"><circle cx="90" cy="218" r="9"/><circle cx="130" cy="240" r="9"/><circle cx="170" cy="214" r="9"/><circle cx="200" cy="244" r="9"/></g>
+          <g fill="#16784a"><circle cx="110" cy="256" r="6"/><circle cx="154" cy="262" r="6"/><circle cx="60" cy="240" r="6"/></g>
+          <rect x="70" y="262" width="34" height="26" rx="12" fill="#e8478b" stroke="#2b1a3b" stroke-width="5"/>
+          <rect x="170" y="262" width="34" height="26" rx="12" fill="#e8478b" stroke="#2b1a3b" stroke-width="5"/>
+          <path d="M232 214l-18 0" stroke="#2b1a3b" stroke-width="5"/>
+          <g class="arm"><path d="M214 206c30-6 52-30 60-58" fill="none" stroke="#2b1a3b" stroke-width="24" stroke-linecap="round"/><path d="M214 206c30-6 52-30 60-58" fill="none" stroke="#f6b800" stroke-width="14" stroke-linecap="round"/><circle cx="276" cy="140" r="14" fill="#e8478b" stroke="#2b1a3b" stroke-width="5"/></g>
+          <path d="M60 88l-8-52 40 26M196 88l10-52-42 26" fill="#f26b21" stroke="#2b1a3b" stroke-width="5" stroke-linejoin="round"/>
+          <g class="head">
+            <circle cx="128" cy="116" r="78" fill="#f26b21" stroke="#2b1a3b" stroke-width="5"/>
+            <g fill="#e8478b"><circle cx="128" cy="52" r="8"/><circle cx="100" cy="58" r="6"/><circle cx="156" cy="58" r="6"/></g>
+            <g fill="#16784a"><path d="M62 112l16 4-14 10zM194 112l-16 4 14 10z"/></g>
+            <ellipse cx="128" cy="140" rx="46" ry="34" fill="#fff6e3" stroke="#2b1a3b" stroke-width="5"/>
+            <path d="M116 128h24l-12 14z" fill="#d62839" stroke="#2b1a3b" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M96 150c14 20 50 20 64 0" fill="#d62839" stroke="#2b1a3b" stroke-width="5" stroke-linecap="round"/>
+            <path d="M110 160c10 12 26 12 36 0" fill="#fff6e3"/>
+            <g class="eye"><circle cx="96" cy="100" r="17" fill="#fff6e3" stroke="#2b1a3b" stroke-width="5"/><circle cx="99" cy="102" r="7" fill="#2b1a3b"/></g>
+            <g class="eye"><circle cx="160" cy="100" r="17" fill="#fff6e3" stroke="#2b1a3b" stroke-width="5"/><circle cx="163" cy="102" r="7" fill="#2b1a3b"/></g>
+            <path d="M74 66q54-26 108 0" fill="none" stroke="#f6b800" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 16"/>
+          </g>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top" aria-label="El Grito home">El Grito</a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="menu.html">Menu</a>
+          <a href="our-story.html">Our Story</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#visit">Find Us</a>
+          <a class="nav-cta" href="book-a-table.html">Book a Table</a>
+        </nav>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+        <nav aria-label="Mobile navigation">
+          <a href="our-story.html">Our Story</a>
+          <a href="menu.html">Menu</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#visit">Find Us</a>
+          <a href="book-a-table.html">Book a Table</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Mexican restaurant · Dublin</p>
+            <h1 class="hero-title" aria-label="Real Mexican food. Loud flavours. Dublin.">
+              <span class="hero-line">Real Mexican food.</span>
+              <span class="hero-line">Loud flavours.</span>
+              <span class="hero-line">Dublin.</span>
+            </h1>
+            <p class="lead">El Grito is a neighbourhood Mexican kitchen on Mountjoy Square: tacos, Mexican favourites and drinks, with vegetarian and gluten-free options.</p>
+            <div class="hero-actions">
+              <a class="button primary" href="book-a-table.html">Book a table</a>
+              <a class="button secondary" href="menu.html" target="_blank" rel="noopener">View menu</a>
+            </div>
+            <div class="hero-meta">
+              <div>20 Mountjoy Square East</div>
+              <div>Vegetarian + GF</div>
+            </div>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="glow"></div>
+            <div class="badge-cluster">4.3 / 5 · 352 reviews</div>
+            <div class="mascot-stage">
+              <svg class="mascot" viewBox="0 0 300 300"><use href="#grito"></use></svg>
+            </div>
+            <div class="floating-burst">🌶️</div>
+            <div class="floating-burst">🌮</div>
+          </div>
+        </div>
+
+        <div class="marquee-wrap" aria-label="Scrolling callout">
+          <div class="marquee-track">
+            <span>Tacos ✦ Salsa ✦ Margaritas ✦ Mexico ✦ Dublin ✦ El Grito ✦</span>
+            <span>Tacos ✦ Salsa ✦ Margaritas ✦ Mexico ✦ Dublin ✦ El Grito ✦</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section story" id="story">
+        <div class="container story-grid">
+          <div class="story-copy">
+            <p class="eyebrow">Our Story</p>
+            <h2 class="story-title">
+              <span class="story-line">Born in Dublin.</span>
+              <span class="story-line">Inspired by Mexico.</span>
+            </h2>
+            <p>El Grito started with one goal: bring authentic Mexican flavours to Ireland. Fresh tortillas, bold salsas and food made to share, served in a room that feels like a party the moment you walk in.</p>
+            <p>The name is a shout of joy. So come hungry, bring friends, and be loud about it.</p>
+            <div class="story-stats">
+              <div class="stat"><strong>14+</strong><span>Flavours</span></div>
+              <div class="stat"><strong>100%</strong><span>Vibe</span></div>
+              <div class="stat"><strong>Open</strong><span>Late</span></div>
+            </div>
+          </div>
+
+          <div class="story-visual" aria-label="El Grito atmosphere and menu highlights">
+            <div class="visual-card card-one"><span>🌮 Tacos</span></div>
+            <div class="visual-card card-two"><span>🥑 Salsas</span></div>
+            <div class="visual-card card-three"><span>🍹 Drinks</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section menu" id="food">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Menu</p>
+            <h2>Bold plates. <span>Big energy.</span></h2>
+          </div>
+
+          <div class="food-grid">
+            <a class="food-panel red" href="menu.html#main-menu" aria-label="View tacos menu">
+              <span class="panel-tag">Tacos</span>
+              <h3>Tacos</h3>
+              <p>Birria, grilled chicken and veggie &amp; salsa.</p>
+              <span class="small-link">View menu</span>
+            </a>
+
+            <a class="food-panel yellow" href="menu.html#main-menu" aria-label="View signature plates menu">
+              <span class="panel-tag">Favourites</span>
+              <h3>Signature plates</h3>
+              <p>Chimichanga, mole chicken and the Gringa classic.</p>
+              <span class="small-link">View menu</span>
+            </a>
+
+            <a class="food-panel green" href="menu.html#main-menu" aria-label="View vegetarian menu">
+              <span class="panel-tag">Veg</span>
+              <h3>Vegetarian</h3>
+              <p>Quesadilla, sweet potato tacos and rice bowls.</p>
+              <span class="small-link">View menu</span>
+            </a>
+
+            <a class="food-panel pink" href="menu.html#cocktails" aria-label="View drinks and cocktails menu">
+              <span class="panel-tag">Drinks</span>
+              <h3>Drinks</h3>
+              <p>Classic margarita, palomas and ice-cold favourites.</p>
+              <span class="small-link">View menu</span>
+            </a>
+          </div>
+
+          <div class="menu-note">
+            <span>Vegetarian options</span>
+            <span>Gluten-free options</span>
+            <span>Fresh salsas</span>
+          </div>
+        </div>
+      </section>
+
+      <div class="typography-band" aria-hidden="true">
+        <div class="band-inner">
+          EL GRITO • MEXICAN FOOD • DUBLIN • EL GRITO • MEXICAN FOOD • DUBLIN •
+        </div>
+      </div>
+
+      <section class="section atmosphere" id="atmosphere">
+        <div class="container">
+          <div class="section-copy">
+            <p class="eyebrow">Atmosphere</p>
+            <h2>Come for the tacos. Stay for the noise.</h2>
+          </div>
+          <div class="mosaic" aria-label="El Grito interior and nightlife atmosphere">
+            <div class="mosaic-card m-one"><span>Georgian Dublin, Mexican heart</span></div>
+            <div class="mosaic-card m-two"><span>Papel picado</span></div>
+            <div class="mosaic-card m-three"><span>Margaritas all round</span></div>
+            <div class="mosaic-card m-four"><span>Shared tables</span></div>
+            <div class="mosaic-card m-five"><span>Music up</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews" id="reviews">
+        <div class="container">
+          <div class="section-header reviews-header">
+            <div>
+              <p class="eyebrow">Reviews</p>
+              <h2>Guests who have eaten with us.</h2>
+            </div>
+          </div>
+
+          <div class="review-summary">
+            <div class="score-block">
+              <div class="score-number" data-score="4.3">0</div>
+              <div>
+                <div class="stars" aria-label="4.3 out of 5 stars">★★★★★</div>
+              </div>
+            </div>
+            <div class="summary-text">
+              <h3>4.3 / 5</h3>
+              <p>Based on guest reviews from diners who’ve visited El Grito</p>
+            </div>
+          </div>
+
+          <div class="review-grid">
+            <article class="review-card">
+              <div class="review-header">
+                <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <span class="review-source">Tripadvisor</span>
+              </div>
+              <p>“We came for tacos and stayed for the whole night. The birria was properly rich, the margaritas were spot on, and the room feels lively without ever feeling chaotic. It’s the kind of place you leave already planning a return visit.”</p>
+              <div class="review-author">— Maria &amp; Ben, Dublin</div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-header">
+                <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                <span class="review-source">Google</span>
+              </div>
+              <p>“The food tastes genuinely Mexican, not just ‘Mexican-inspired’. Every dish had depth, the salsa was fresh, and the service was warm and efficient. We booked a table for four and ended up staying longer than planned.”</p>
+              <div class="review-author">— Carla, Dublin</div>
+            </article>
+
+            <article class="review-card">
+              <div class="review-header">
+                <div class="review-stars" aria-label="4.5 out of 5 stars">★★★★★</div>
+                <span class="review-source">Instagram</span>
+              </div>
+              <p>“This is one of those rare places that hits both the food and the vibe. The gringa plate was excellent, the cocktails were generous, and the whole atmosphere feels like a proper night out in the city with a Mexican soul.”</p>
+              <div class="review-author">— Daniel, Cork</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section visit" id="visit">
+        <div class="container visit-grid">
+          <div class="visit-copy">
+            <p class="eyebrow">Find Us</p>
+            <h2>Right on Mountjoy Square, with a good reason to stay late.</h2>
+            <address class="address">20 Mountjoy Square East<br>Dublin D01 K3T1<br>Ireland</address>
+            <div class="visit-actions">
+              <a class="button primary" href="https://www.google.com/maps/search/?api=1&query=20+Mountjoy+Square+East+Dublin+D01+K3T1" rel="noopener" target="_blank">Get directions</a>
+              <a class="button secondary" href="tel:+35315486410">Call us</a>
+            </div>
+          </div>
+
+          <div class="map-panel" aria-label="Stylised map showing El Grito location">
+            <svg viewBox="0 0 700 480" role="img" aria-labelledby="map-title map-desc">
+              <title id="map-title">Map showing El Grito at Mountjoy Square</title>
+              <desc id="map-desc">Stylised location map with a red pin and route markers.</desc>
+              <rect width="700" height="480" fill="#bfe3c9"/>
+              <g stroke="#fff7ec" stroke-width="21" stroke-linecap="round" fill="none">
+                <path d="M0 120H700M0 360H700M120 0V480M550 0V480"/>
+              </g>
+              <g stroke="#fff7ec" stroke-width="10" fill="none">
+                <path d="M0 240H700M350 0V480"/>
+              </g>
+              <rect x="200" y="150" width="300" height="200" rx="18" fill="#1a6b47"/>
+              <g fill="#f6c451">
+                <circle cx="250" cy="190" r="14"/>
+                <circle cx="350" cy="220" r="16"/>
+                <circle cx="450" cy="300" r="14"/>
+              </g>
+              <text x="350" y="240" text-anchor="middle" font-family="Bowlby One, Arial Black, sans-serif" font-size="26" fill="#fff7ec">MOUNTJOY SQ</text>
+              <g class="pin-group">
+                <path d="M500 110c-34 0-52 24-52 46 0 36 52 82 52 82s52-46 52-82c0-22-18-46-52-46z" fill="#d92e3a" stroke="#1d1a2a" stroke-width="5"/>
+                <circle cx="500" cy="160" r="16" fill="#fff7ec"/>
+              </g>
+              <text x="500" y="255" text-anchor="middle" font-family="Bowlby One, Arial Black, sans-serif" font-size="28" fill="#1d1a2a">El Grito</text>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-section" id="book">
+        <div class="container cta-inner">
+          <div class="cta-copy">
+            <p class="eyebrow" style="color: rgba(255,247,236,0.75);">Book now</p>
+            <h2 class="cta-title">
+              <span>Ready to get your</span>
+              <span class="cta-grito-wrap">
+                <span class="cta-grito-text">grito</span>
+              </span>
+              <span>on?</span>
+            </h2>
+          </div>
+
+          <div class="cta-action">
+            <span class="cta-mascot-bubble" aria-hidden="true">
+              <svg class="cta-mini-mascot" viewBox="0 0 300 300"><use href="#grito"></use></svg>
+            </span>
+            <a class="button primary large" href="tel:+35315486410">Book a table</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand-block">
+          <a class="footer-brand" href="#top">El Grito</a>
+          <p>Real Mexican food, loud flavours, and late-night energy in the heart of Dublin.</p>
+        </div>
+
+        <div class="footer-links">
+          <a href="menu.html">Menu</a>
+          <a href="our-story.html">Our Story</a>
+          <a href="book-a-table.html">Book a Table</a>
+        </div>
+
+        <div class="footer-contact">
+          <p class="footer-label">Visit</p>
+          <a href="https://www.google.com/maps/search/?api=1&query=20+Mountjoy+Square+East+Dublin+D01+K3T1" target="_blank" rel="noopener">20 Mountjoy Square East</a>
+          <span>Dublin D01 K3T1</span>
+          <span>Ireland</span>
+        </div>
+
+        <div class="footer-contact">
+          <p class="footer-label">Hours</p>
+          <span>Tue–Sun</span>
+          <span>5:00pm – late</span>
+          <a href="tel:+35315486410">+353 1 548 6410</a>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <span>© 2026 El Grito</span>
+        <span>Made for good nights</span>
+      </div>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

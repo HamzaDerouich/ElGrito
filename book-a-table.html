@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Grito | Book a Table</title>
+    <meta name="description" content="Book a table at El Grito, a Mexican restaurant in Dublin. Reserve your night in a warm, lively dining room." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="booking-page">
+    <div class="cursor" aria-hidden="true"></div>
+
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <defs>
+        <symbol id="grito" viewBox="0 0 300 300">
+          <g class="tail"><path d="M236 214c40-6 56-40 40-64" fill="none" stroke="#f26b21" stroke-width="16" stroke-linecap="round"/><circle cx="276" cy="150" r="10" fill="#e8478b"/></g>
+          <g class="body">
+            <ellipse cx="140" cy="226" rx="96" ry="58" fill="#f6b800" stroke="#2b1a3b" stroke-width="5"/>
+            <g fill="#d62839"><circle cx="90" cy="218" r="9"/><circle cx="130" cy="240" r="9"/><circle cx="170" cy="214" r="9"/><circle cx="200" cy="244" r="9"/></g>
+            <g fill="#16784a"><circle cx="110" cy="256" r="6"/><circle cx="154" cy="262" r="6"/><circle cx="60" cy="240" r="6"/></g>
+            <rect x="70" y="262" width="34" height="26" rx="12" fill="#e8478b" stroke="#2b1a3b" stroke-width="5"/>
+            <rect x="170" y="262" width="34" height="26" rx="12" fill="#e8478b" stroke="#2b1a3b" stroke-width="5"/>
+            <path d="M232 214l-18 0" stroke="#2b1a3b" stroke-width="5"/>
+            <g class="arm"><path d="M214 206c30-6 52-30 60-58" fill="none" stroke="#2b1a3b" stroke-width="24" stroke-linecap="round"/><path d="M214 206c30-6 52-30 60-58" fill="none" stroke="#f6b800" stroke-width="14" stroke-linecap="round"/><circle cx="276" cy="140" r="14" fill="#e8478b" stroke="#2b1a3b" stroke-width="5"/></g>
+            <path d="M60 88l-8-52 40 26M196 88l10-52-42 26" fill="#f26b21" stroke="#2b1a3b" stroke-width="5" stroke-linejoin="round"/>
+            <g class="head">
+              <circle cx="128" cy="116" r="78" fill="#f26b21" stroke="#2b1a3b" stroke-width="5"/>
+              <g fill="#e8478b"><circle cx="128" cy="52" r="8"/><circle cx="100" cy="58" r="6"/><circle cx="156" cy="58" r="6"/></g>
+              <g fill="#16784a"><path d="M62 112l16 4-14 10zM194 112l-16 4 14 10z"/></g>
+              <ellipse cx="128" cy="140" rx="46" ry="34" fill="#fff6e3" stroke="#2b1a3b" stroke-width="5"/>
+              <path d="M116 128h24l-12 14z" fill="#d62839" stroke="#2b1a3b" stroke-width="4" stroke-linejoin="round"/>
+              <path d="M96 150c14 20 50 20 64 0" fill="#d62839" stroke="#2b1a3b" stroke-width="5" stroke-linecap="round"/>
+              <path d="M110 160c10 12 26 12 36 0" fill="#fff6e3"/>
+              <g class="eye"><circle cx="96" cy="100" r="17" fill="#fff6e3" stroke="#2b1a3b" stroke-width="5"/><circle cx="99" cy="102" r="7" fill="#2b1a3b"/></g>
+              <g class="eye"><circle cx="160" cy="100" r="17" fill="#fff6e3" stroke="#2b1a3b" stroke-width="5"/><circle cx="163" cy="102" r="7" fill="#2b1a3b"/></g>
+              <path d="M74 66q54-26 108 0" fill="none" stroke="#f6b800" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 16"/>
+            </g>
+          </g>
+        </symbol>
+      </defs>
+    </svg>
+
+    <div class="page-shell">
+      <header class="site-header">
+        <div class="container nav-wrap">
+          <a class="brand" href="index.html" aria-label="El Grito home">El Grito</a>
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="our-story.html">Our Story</a>
+            <a href="book-a-table.html" class="is-active">Book a Table</a>
+          </nav>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+          <nav aria-label="Mobile navigation">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="our-story.html">Our Story</a>
+            <a href="book-a-table.html">Book a Table</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="booking-main">
+        <section class="booking-hero">
+          <div class="booking-hero-bg" aria-hidden="true">
+            <span class="paper-shape shape-one"></span>
+            <span class="paper-shape shape-two"></span>
+            <span class="paper-shape shape-three"></span>
+          </div>
+
+          <div class="container booking-hero-inner">
+            <div class="booking-hero-copy">
+              <div class="booking-mascot-wrap" id="bookingMascot" aria-hidden="true">
+                <svg class="mascot booking-mascot" viewBox="0 0 300 300"><use href="#grito"></use></svg>
+              </div>
+              <p class="eyebrow">Reservation</p>
+              <h1 class="booking-title" aria-label="Book a Table">
+                <span class="booking-line">BOOK A TABLE</span>
+                <span class="booking-line alt">YOUR TABLE IS WAITING.</span>
+              </h1>
+              <p class="booking-subhead">Come hungry. Leave happy.</p>
+              <a href="#reservation-process" class="button primary">Reserve now</a>
+            </div>
+
+            <div class="booking-hero-visual" aria-hidden="true">
+              <div class="booking-photo" data-speed="0.12">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="El Grito dining room and restaurant table" loading="eager" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="booking-process" id="reservation-process">
+          <div class="container">
+            <div class="booking-intro">
+              <p class="eyebrow">Let's get you a table</p>
+              <h2>LET'S GET YOU A TABLE.</h2>
+              <p>Choose your date, time and party size. We'll take care of the rest.</p>
+            </div>
+
+            <form id="bookingForm" class="booking-form" novalidate>
+              <div class="booking-step panel step-one">
+                <div class="step-header">
+                  <span class="step-number">STEP 01</span>
+                  <h3>WHEN?</h3>
+                </div>
+                <div class="calendar" role="group" aria-label="Choose a date for your reservation">
+                  <div class="calendar-days" aria-hidden="true">
+                    <span>MON</span>
+                    <span>TUE</span>
+                    <span>WED</span>
+                    <span>THU</span>
+                    <span>FRI</span>
+                    <span>SAT</span>
+                    <span>SUN</span>
+                  </div>
+                  <div id="dateGrid" class="date-grid" aria-live="polite"></div>
+                </div>
+              </div>
+
+              <div class="booking-step panel step-two">
+                <div class="step-header">
+                  <span class="step-number">STEP 02</span>
+                  <h3>WHAT TIME?</h3>
+                </div>
+                <div class="time-group" aria-label="Choose a reservation time">
+                  <div class="time-block">
+                    <span class="time-label">EARLY</span>
+                    <div class="time-grid">
+                      <button type="button" class="time-btn" data-time="17:30">17:30</button>
+                      <button type="button" class="time-btn" data-time="18:00">18:00</button>
+                      <button type="button" class="time-btn" data-time="18:30">18:30</button>
+                    </div>
+                  </div>
+                  <div class="time-block">
+                    <span class="time-label">DINNER</span>
+                    <div class="time-grid">
+                      <button type="button" class="time-btn" data-time="19:00">19:00</button>
+                      <button type="button" class="time-btn" data-time="19:30">19:30</button>
+                      <button type="button" class="time-btn" data-time="20:00">20:00</button>
+                      <button type="button" class="time-btn" data-time="20:30">20:30</button>
+                      <button type="button" class="time-btn" data-time="21:00">21:00</button>
+                      <button type="button" class="time-btn" data-time="21:30">21:30</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="booking-step panel step-three">
+                <div class="step-header">
+                  <span class="step-number">STEP 03</span>
+                  <h3>HOW MANY?</h3>
+                </div>
+                <div class="guest-selector" aria-label="Select number of guests">
+                  <div class="guest-control">
+                    <button type="button" class="guest-btn" data-action="decrease" aria-label="Decrease guest count">−</button>
+                    <div class="guest-number-wrap">
+                      <span class="guest-kicker">HOW MANY ARE JOINING?</span>
+                      <span id="guestCount" class="guest-value" aria-live="polite">2</span>
+                      <span class="guest-unit">people</span>
+                    </div>
+                    <button type="button" class="guest-btn" data-action="increase" aria-label="Increase guest count">+</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="booking-step panel step-four">
+                <div class="step-header">
+                  <span class="step-number">STEP 04</span>
+                  <h3>WHO ARE YOU?</h3>
+                </div>
+
+                <div class="field-grid">
+                  <div class="field-wrap">
+                    <label for="name">FULL NAME</label>
+                    <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" />
+                  </div>
+                  <div class="field-wrap">
+                    <label for="email">EMAIL</label>
+                    <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" />
+                  </div>
+                  <div class="field-wrap">
+                    <label for="phone">PHONE</label>
+                    <input id="phone" name="phone" type="tel" autocomplete="tel" placeholder="+353 00 000 0000" />
+                  </div>
+                </div>
+              </div>
+
+              <div class="booking-step panel step-five">
+                <div class="step-header">
+                  <span class="step-number">STEP 05</span>
+                  <h3>ANYTHING ELSE?</h3>
+                </div>
+                <div class="field-wrap full-width">
+                  <label for="message">SPECIAL REQUESTS</label>
+                  <textarea id="message" name="message" rows="4" placeholder="Birthday, dietary requirements, accessibility needs..."></textarea>
+                </div>
+              </div>
+
+              <aside class="booking-summary panel" aria-live="polite">
+                <div class="summary-header">
+                  <div>
+                    <p class="eyebrow">Reservation</p>
+                    <h3>YOUR TABLE</h3>
+                  </div>
+                  <button type="button" class="summary-edit" id="editSummary">EDIT</button>
+                </div>
+                <div class="summary-list">
+                  <div class="summary-row">
+                    <span>DATE</span>
+                    <strong id="summaryDate">SELECT A DATE</strong>
+                  </div>
+                  <div class="summary-row">
+                    <span>TIME</span>
+                    <strong id="summaryTime">SELECT A TIME</strong>
+                  </div>
+                  <div class="summary-row">
+                    <span>GUESTS</span>
+                    <strong id="summaryGuests">2 PEOPLE</strong>
+                  </div>
+                  <div class="summary-row">
+                    <span>NAME</span>
+                    <strong id="summaryName">YOUR NAME</strong>
+                  </div>
+                  <div class="summary-row">
+                    <span>EMAIL</span>
+                    <strong id="summaryEmail">YOUR EMAIL</strong>
+                  </div>
+                </div>
+                <div class="summary-stamp">EL GRITO — DUBLIN</div>
+              </aside>
+
+              <div class="submit-wrap">
+                <button type="submit" class="button primary large booking-submit" id="submitButton">BOOK MY TABLE</button>
+                <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+              </div>
+            </form>
+
+            <section id="successState" class="success-state hidden" aria-live="polite">
+              <div class="success-inner">
+                <p class="eyebrow success-eyebrow">Reservation request</p>
+                <h2>GRACIAS!</h2>
+                <p class="success-line">YOUR REQUEST IS IN.</p>
+                <p>We've received your reservation request and will be in touch to confirm your table.</p>
+                <div class="success-details">
+                  <span id="successDate">Friday 10 October</span>
+                  <span id="successTime">20:00</span>
+                  <span id="successGuests">2 people</span>
+                </div>
+                <p class="success-signoff">SEE YOU AT EL GRITO.</p>
+              </div>
+            </section>
+          </div>
+        </section>
+
+        <section class="restaurant-info">
+          <div class="container info-grid">
+            <div class="info-copy">
+              <p class="eyebrow">Before you grito</p>
+              <h2>BEFORE YOU GRITO</h2>
+              <p class="info-brand">EL GRITO</p>
+              <p>Mexican restaurant in Dublin.</p>
+            </div>
+
+            <div class="info-details">
+              <div class="info-block">
+                <span class="label">ADDRESS</span>
+                <address>20 Mountjoy Square East<br />Dublin D01 K3T1<br />Ireland</address>
+              </div>
+              <div class="info-actions">
+                <a href="https://www.google.com/maps/search/?api=1&query=20+Mountjoy+Square+East+Dublin+D01+K3T1" target="_blank" rel="noopener" class="button secondary">Get directions</a>
+                <a href="tel:+35315486410" class="button secondary">Contact us</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="expectations">
+          <div class="container">
+            <div class="expectations-intro">
+              <p class="eyebrow">What to expect</p>
+              <h2>COME FOR THE FOOD.<br />STAY FOR THE GRITO.</h2>
+            </div>
+
+            <div class="expectation-stack">
+              <div class="expectation-item" data-speed="0.06">
+                <span>REAL MEXICAN FLAVOUR</span>
+              </div>
+              <div class="expectation-item" data-speed="0.1">
+                <span>GOOD PEOPLE</span>
+              </div>
+              <div class="expectation-item" data-speed="0.14">
+                <span>A TABLE FULL OF LIFE</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="food-teaser">
+          <div class="container food-teaser-inner">
+            <div class="food-teaser-copy">
+              <p class="eyebrow">Food teaser</p>
+              <h2>NOW, WHAT ARE WE EATING?</h2>
+              <a href="menu.html" class="button secondary">EXPLORE THE MENU →</a>
+            </div>
+            <div class="food-teaser-grid">
+              <figure class="teaser-card" data-speed="0.12">
+                <img src="https://elgrito.eu/wp-content/uploads/2025/09/Torta.png" alt="El Grito torta" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="teaser-card" data-speed="0.16">
+                <img src="https://elgrito.eu/wp-content/uploads/2025/09/chimichanga.png" alt="El Grito chimichanga" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="teaser-card" data-speed="0.18">
+                <img src="https://elgrito.eu/wp-content/uploads/2025/09/Mole.png" alt="El Grito mole" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="teaser-card" data-speed="0.1">
+                <img src="https://elgrito.eu/wp-content/uploads/2025/09/Tacos-dorados.png" alt="El Grito tacos dorados" loading="lazy" decoding="async" />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="final-booking-cta">
+          <div class="container final-cta-inner">
+            <div class="final-cta-copy">
+              <h2>SEE YOU<br />AT EL GRITO.</h2>
+              <div class="final-cta-actions">
+                <a href="#reservation-process" class="button primary">BOOK YOUR TABLE →</a>
+                <a href="menu.html" class="button secondary">EXPLORE THE MENU →</a>
+              </div>
+            </div>
+            <div class="final-cta-visual" aria-hidden="true">
+              <div class="final-paper final-paper-one"></div>
+              <div class="final-paper final-paper-two"></div>
+              <svg class="final-mascot" viewBox="0 0 300 300"><use href="#grito"></use></svg>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

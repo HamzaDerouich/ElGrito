@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Grito | Our Story</title>
+    <meta name="description" content="The story of El Grito: from Mexico to Dublin, food, people and celebration." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="story-page">
+    <div class="cursor" aria-hidden="true"></div>
+
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <defs>
+        <symbol id="grito" viewBox="0 0 300 300">
+          <g class="tail"><path d="M236 214c40-6 56-40 40-64" fill="none" stroke="#f26b21" stroke-width="16" stroke-linecap="round"/><circle cx="276" cy="150" r="10" fill="#e8478b"/></g>
+          <g class="body">
+            <ellipse cx="140" cy="226" rx="96" ry="58" fill="#f6b800" stroke="#2b1a3b" stroke-width="5"/>
+            <g fill="#d62839"><circle cx="90" cy="218" r="9"/><circle cx="130" cy="240" r="9"/><circle cx="170" cy="214" r="9"/><circle cx="200" cy="244" r="9"/></g>
+            <g fill="#16784a"><circle cx="110" cy="256" r="6"/><circle cx="154" cy="262" r="6"/><circle cx="60" cy="240" r="6"/></g>
+            <rect x="70" y="262" width="34" height="26" rx="12" fill="#e8478b" stroke="#2b1a3b" stroke-width="5"/>
+            <rect x="170" y="262" width="34" height="26" rx="12" fill="#e8478b" stroke="#2b1a3b" stroke-width="5"/>
+            <path d="M232 214l-18 0" stroke="#2b1a3b" stroke-width="5"/>
+            <g class="arm"><path d="M214 206c30-6 52-30 60-58" fill="none" stroke="#2b1a3b" stroke-width="24" stroke-linecap="round"/><path d="M214 206c30-6 52-30 60-58" fill="none" stroke="#f6b800" stroke-width="14" stroke-linecap="round"/><circle cx="276" cy="140" r="14" fill="#e8478b" stroke="#2b1a3b" stroke-width="5"/></g>
+            <path d="M60 88l-8-52 40 26M196 88l10-52-42 26" fill="#f26b21" stroke="#2b1a3b" stroke-width="5" stroke-linejoin="round"/>
+            <g class="head">
+              <circle cx="128" cy="116" r="78" fill="#f26b21" stroke="#2b1a3b" stroke-width="5"/>
+              <g fill="#e8478b"><circle cx="128" cy="52" r="8"/><circle cx="100" cy="58" r="6"/><circle cx="156" cy="58" r="6"/></g>
+              <g fill="#16784a"><path d="M62 112l16 4-14 10zM194 112l-16 4 14 10z"/></g>
+              <ellipse cx="128" cy="140" rx="46" ry="34" fill="#fff6e3" stroke="#2b1a3b" stroke-width="5"/>
+              <path d="M116 128h24l-12 14z" fill="#d62839" stroke="#2b1a3b" stroke-width="4" stroke-linejoin="round"/>
+              <path d="M96 150c14 20 50 20 64 0" fill="#d62839" stroke="#2b1a3b" stroke-width="5" stroke-linecap="round"/>
+              <path d="M110 160c10 12 26 12 36 0" fill="#fff6e3"/>
+              <g class="eye"><circle cx="96" cy="100" r="17" fill="#fff6e3" stroke="#2b1a3b" stroke-width="5"/><circle cx="99" cy="102" r="7" fill="#2b1a3b"/></g>
+              <g class="eye"><circle cx="160" cy="100" r="17" fill="#fff6e3" stroke="#2b1a3b" stroke-width="5"/><circle cx="163" cy="102" r="7" fill="#2b1a3b"/></g>
+              <path d="M74 66q54-26 108 0" fill="none" stroke="#f6b800" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 16"/>
+            </g>
+          </g>
+        </symbol>
+      </defs>
+    </svg>
+
+    <div class="page-shell">
+      <header class="site-header story-header">
+        <div class="container nav-wrap">
+          <a class="brand" href="index.html" aria-label="El Grito home">El Grito</a>
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="menu.html">Menu</a>
+            <a href="our-story.html" class="is-active">Our Story</a>
+            <a href="index.html#reviews">Reviews</a>
+            <a href="index.html#visit">Find Us</a>
+            <a class="nav-cta" href="book-a-table.html">Book a Table</a>
+          </nav>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+        </div>
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+          <nav aria-label="Mobile navigation">
+            <a href="menu.html">Menu</a>
+            <a href="our-story.html">Our Story</a>
+            <a href="index.html#reviews">Reviews</a>
+            <a href="index.html#visit">Find Us</a>
+            <a href="book-a-table.html">Book a Table</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="story-main">
+        <section class="story-hero">
+          <div class="story-hero-bg" aria-hidden="true">
+            <span class="papel papel-one"></span>
+            <span class="papel papel-two"></span>
+            <span class="papel papel-three"></span>
+            <span class="papel papel-four"></span>
+          </div>
+
+          <div class="container story-hero-inner">
+            <div class="story-hero-copy">
+              <p class="eyebrow">Since 2015</p>
+              <h1 class="story-hero-title" aria-label="Our Story">
+                <span class="story-line-block"><span class="story-word reveal-word">OUR</span></span>
+                <span class="story-line-block"><span class="story-word reveal-word">STORY</span></span>
+              </h1>
+              <div class="story-hero-subtitle">
+                <span>FROM MEXICO</span>
+                <span class="subtitle-arrow">↓</span>
+                <span>TO DUBLIN.</span>
+              </div>
+              <p class="story-hero-intro">Sharing the Mexican recipe to Dublin since 2015.</p>
+            </div>
+
+            <div class="story-hero-visual" aria-hidden="true">
+              <div class="story-mascot-wrap">
+                <svg class="mascot" viewBox="0 0 300 300"><use href="#grito"></use></svg>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-section mexico-story" id="mexico">
+          <div class="container story-split">
+            <div class="story-intro-copy">
+              <p class="eyebrow">Mexico</p>
+              <h2>IT STARTED WITH MEXICO.</h2>
+              <p>Warm tortillas, bold salsas, family recipes and the feeling that food should always bring people together. That is where El Grito begins.</p>
+            </div>
+            <div class="story-big-word-wrap" data-speed="0.08">
+              <div class="story-big-word">MEXICO</div>
+            </div>
+          </div>
+          <div class="story-pattern-layer" aria-hidden="true">
+            <span class="pattern pattern-one" data-speed="0.12"></span>
+            <span class="pattern pattern-two" data-speed="0.18"></span>
+            <span class="pattern pattern-three" data-speed="0.06"></span>
+          </div>
+        </section>
+
+        <section class="story-section timeline-section">
+          <div class="timeline-shell">
+            <div class="timeline-year" data-speed="0.07">2015</div>
+            <div class="timeline-content">
+              <p class="eyebrow">2015</p>
+              <h2>THE BEGINNING</h2>
+              <p>Sharing the Mexican recipe to Dublin since 2015.</p>
+            </div>
+            <div class="timeline-journey" aria-hidden="true">
+              <div class="timeline-dot dot-mexico"></div>
+              <div class="timeline-line"></div>
+              <div class="timeline-dot dot-dublin"></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-section journey-section">
+          <div class="container">
+            <div class="journey-words">
+              <span class="journey-word" data-speed="0.1">MEXICO</span>
+              <span class="journey-arrow">↓</span>
+              <span class="journey-word" data-speed="0.15">DUBLIN</span>
+            </div>
+            <div class="journey-visual" aria-hidden="true">
+              <span class="route route-one"></span>
+              <span class="route route-two"></span>
+              <div class="origin-tag">MEXICO</div>
+              <div class="destination-tag">DUBLIN</div>
+              <svg class="journey-mascot" viewBox="0 0 300 300"><use href="#grito"></use></svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-section philosophy-section">
+          <div class="container philosophy-wrap">
+            <div class="philosophy-copy">
+              <p class="eyebrow">Our philosophy</p>
+              <h2>WHY WE DO IT</h2>
+              <p>We always seek to prepare the best Mexican dishes so that our customers can enjoy a little taste of Mexico at their table, with professional chefs who are passionate about Mexican cuisine.</p>
+            </div>
+            <div class="phrase-stack" aria-label="A little taste of Mexico">
+              <span class="phrase phrase-one" data-speed="0.08">A LITTLE</span>
+              <span class="phrase phrase-two" data-speed="0.1">TASTE OF</span>
+              <span class="phrase phrase-three" data-speed="0.13">MEXICO.</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-section food-story">
+          <div class="container">
+            <div class="story-intro-copy food-copy">
+              <p class="eyebrow">Food</p>
+              <h2>THE FOOD IS THE STORY.</h2>
+            </div>
+
+            <div class="food-collage">
+              <figure class="food-shot shot-one" data-speed="0.08">
+                <img src="https://elgrito.eu/wp-content/uploads/2025/09/Torta.png" alt="El Grito torta" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="food-shot shot-two" data-speed="0.12">
+                <img src="https://elgrito.eu/wp-content/uploads/2025/09/chimichanga.png" alt="El Grito chimichanga" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="food-shot shot-three" data-speed="0.18">
+                <img src="https://elgrito.eu/wp-content/uploads/2025/09/Mole.png" alt="El Grito mole" loading="lazy" decoding="async" />
+              </figure>
+              <figure class="food-shot shot-four" data-speed="0.14">
+                <img src="https://elgrito.eu/wp-content/uploads/2025/09/Tacos-dorados.png" alt="El Grito tacos dorados" loading="lazy" decoding="async" />
+              </figure>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-section people-section">
+          <div class="container people-layout">
+            <div class="people-media" data-speed="0.1">
+              <img src="https://elgrito.eu/wp-content/uploads/2023/11/enrique-1-1024x1024.jpg" alt="El Grito team member" loading="lazy" decoding="async" />
+            </div>
+            <div class="people-copy">
+              <p class="eyebrow">The people</p>
+              <h2>THE PEOPLE BEHIND THE GRITO.</h2>
+              <p>Our team is always happy to help our customers, bring the best service and a smile, and bring the flavour to their table.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-section restaurant-section">
+          <div class="container">
+            <div class="restaurant-copy">
+              <p class="eyebrow">The restaurant</p>
+              <h2>NOT JUST A MEAL.</h2>
+              <h2 class="secondary-line">IT'S AN EXPERIENCE.</h2>
+            </div>
+            <div class="restaurant-collage" aria-label="El Grito atmosphere collage">
+              <div class="collage-panel panel-one" data-speed="0.06"></div>
+              <div class="collage-panel panel-two" data-speed="0.12"></div>
+              <div class="collage-panel panel-three" data-speed="0.18"></div>
+              <div class="collage-badge">Loud flavours. Warm welcome.</div>
+              <svg class="collage-mascot" viewBox="0 0 300 300" aria-hidden="true"><use href="#grito"></use></svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-section events-section">
+          <div class="container events-wrap">
+            <div class="events-header">
+              <p class="eyebrow">Mexican events</p>
+              <h2>MEXICAN EVENTS</h2>
+              <p class="events-sub">Celebrate with us.</p>
+            </div>
+            <div class="events-banner" data-speed="0.16">
+              <span>CELEBRATE</span>
+              <span class="event-word-two">TOGETHER.</span>
+            </div>
+            <p class="events-copy">Our team loves celebrating different Mexican celebrations with our customers in the restaurant, sharing the happiness from Mexico, making them smile and helping them take part in Mexico in Dublin.</p>
+            <a class="button primary large" href="tel:+35315486410">PLAN YOUR EVENT</a>
+          </div>
+        </section>
+
+        <section class="story-section grito-section">
+          <div class="container grito-wrap">
+            <div class="grito-word-stack">
+              <span class="grito-word el-word">EL</span>
+              <span class="grito-word grito-word-main">GRITO</span>
+            </div>
+            <div class="grito-copy">
+              <p class="eyebrow">The name</p>
+              <h2>WHY EL GRITO?</h2>
+              <p>The name is a shout of joy.</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-section dublin-section">
+          <div class="container dublin-wrap">
+            <div class="dublin-copy">
+              <p class="eyebrow">Dublin</p>
+              <h2>MEXICO IN THE HEART OF DUBLIN.</h2>
+              <address>
+                20 Mountjoy Square East<br />
+                Dublin D01 K3T1<br />
+                Ireland
+              </address>
+            </div>
+            <div class="dublin-map" aria-label="Stylised map showing El Grito location">
+              <svg viewBox="0 0 700 480" role="img" aria-labelledby="map-title map-desc">
+                <title id="map-title">Map showing El Grito at Mountjoy Square</title>
+                <desc id="map-desc">Stylised map with route markers and the El Grito location pin.</desc>
+                <rect width="700" height="480" fill="#bfe3c9"/>
+                <g stroke="#fff7ec" stroke-width="21" stroke-linecap="round" fill="none">
+                  <path d="M0 120H700M0 360H700M120 0V480M550 0V480"/>
+                </g>
+                <g stroke="#fff7ec" stroke-width="10" fill="none">
+                  <path d="M0 240H700M350 0V480"/>
+                </g>
+                <path d="M180 130 C 260 200, 360 210, 500 190" fill="none" stroke="#d92e3a" stroke-width="10" stroke-linecap="round" stroke-dasharray="14 18"/>
+                <g class="pin-group">
+                  <path d="M500 110c-34 0-52 24-52 46 0 36 52 82 52 82s52-46 52-82c0-22-18-46-52-46z" fill="#d92e3a" stroke="#1d1a2a" stroke-width="5"/>
+                  <circle cx="500" cy="160" r="16" fill="#fff7ec"/>
+                </g>
+                <text x="500" y="255" text-anchor="middle" font-family="Bowlby One, Arial Black, sans-serif" font-size="28" fill="#1d1a2a">El Grito</text>
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-section final-story">
+          <div class="container final-story-inner">
+            <div class="final-words">
+              <span>FROM MEXICO.</span>
+              <span>FOR DUBLIN.</span>
+              <span>WITH LOVE.</span>
+            </div>
+            <div class="final-mascot-wrap">
+              <svg class="mascot mascot-final" viewBox="0 0 300 300"><use href="#grito"></use></svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="story-cta">
+          <div class="container story-cta-inner">
+            <div class="story-cta-copy">
+              <p class="eyebrow">Come taste the story</p>
+              <h2>COME TASTE THE STORY.</h2>
+            </div>
+            <div class="story-cta-actions">
+              <a class="button primary large" href="tel:+35315486410">BOOK A TABLE</a>
+              <a class="button secondary large" href="menu.html">EXPLORE THE MENU</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.27/bundled/lenis.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        const initStoryHero = () => {
+          const titleWords = gsap.utils.toArray('.reveal-word');
+          gsap.set(titleWords, { y: 120, opacity: 0, rotate: 7, filter: 'blur(12px)' });
+          gsap.set('.story-hero-intro, .story-hero-subtitle, .story-mascot-wrap', { opacity: 0, y: 26 });
+          gsap.set('.papel', { opacity: 0, scale: 0.8, rotate: 12 });
+
+          const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
+          tl.to('.papel', { opacity: 1, scale: 1, rotate: 0, duration: 1.1, stagger: 0.18 })
+            .to(titleWords, { y: 0, opacity: 1, rotate: 0, filter: 'blur(0px)', duration: 1.15, stagger: 0.12 }, '-=0.5')
+            .to('.story-hero-subtitle', { opacity: 1, y: 0, duration: 0.9 }, '-=0.2')
+            .to('.story-hero-intro', { opacity: 1, y: 0, duration: 0.8 }, '-=0.2')
+            .to('.story-mascot-wrap', { opacity: 1, y: 0, duration: 1 }, '-=0.3');
+
+          gsap.to('.story-mascot-wrap', {
+            y: -12,
+            duration: 2.8,
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut'
+          });
+        };
+
+        const initStoryParallax = () => {
+          gsap.utils.toArray('[data-speed]').forEach((item) => {
+            const speed = Number(item.dataset.speed) || 0.08;
+            gsap.to(item, {
+              yPercent: -(speed * 150),
+              ease: 'none',
+              scrollTrigger: {
+                trigger: item,
+                start: 'top bottom',
+                end: 'bottom top',
+                scrub: true
+              }
+            });
+          });
+
+          gsap.to('.story-big-word', {
+            xPercent: -12,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: '.mexico-story',
+              start: 'top bottom',
+              end: 'bottom top',
+              scrub: true
+            }
+          });
+        };
+
+        const initStoryTimeline = () => {
+          const tl = gsap.timeline({
+            scrollTrigger: {
+              trigger: '.timeline-section',
+              start: 'top center',
+              end: 'bottom center',
+              scrub: true
+            }
+          });
+
+          tl.to('.timeline-year', { scale: 1.15, x: 20, opacity: 1, duration: 1 })
+            .to('.timeline-line', { scaleX: 1, transformOrigin: 'left center', duration: 1 }, 0)
+            .to('.timeline-dot.dot-mexico', { scale: 1.15, duration: 0.5 }, 0)
+            .to('.timeline-dot.dot-dublin', { scale: 1.15, duration: 0.5 }, 0.5);
+        };
+
+        const initFloatingWords = () => {
+          gsap.utils.toArray('.phrase').forEach((phrase, index) => {
+            gsap.fromTo(phrase, {
+              opacity: 0,
+              y: 50,
+              rotate: index % 2 === 0 ? -3 : 3,
+              filter: 'blur(10px)'
+            }, {
+              opacity: 1,
+              y: 0,
+              rotate: 0,
+              filter: 'blur(0px)',
+              duration: 1.2,
+              ease: 'power3.out',
+              scrollTrigger: {
+                trigger: phrase,
+                start: 'top 85%',
+                once: true
+              }
+            });
+          });
+        };
+
+        const initGritoWords = () => {
+          gsap.from('.grito-word.el-word', {
+            opacity: 0,
+            x: -40,
+            duration: 1,
+            scrollTrigger: { trigger: '.grito-word', start: 'top 85%' }
+          });
+          gsap.from('.grito-word-main', {
+            opacity: 0,
+            x: 40,
+            scale: 0.9,
+            duration: 1.2,
+            ease: 'power3.out',
+            scrollTrigger: { trigger: '.grito-word-main', start: 'top 85%' }
+          });
+        };
+
+        const initEventsSection = () => {
+          gsap.to('.events-banner span', {
+            x: () => -(document.querySelector('.events-banner').scrollWidth - window.innerWidth) * 0.22,
+            ease: 'none',
+            scrollTrigger: {
+              trigger: '.events-section',
+              start: 'top bottom',
+              end: 'bottom top',
+              scrub: true
+            }
+          });
+        };
+
+        if (!reduceMotion) {
+          initStoryHero();
+          initStoryParallax();
+          initStoryTimeline();
+          initFloatingWords();
+          initGritoWords();
+          initEventsSection();
+        }
+      });
+    </script>
+  </body>
+</html>

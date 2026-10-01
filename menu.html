@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Grito Menu</title>
+    <meta name="description" content="El Grito menu featuring tacos, breakfast, cocktails, desserts and more from the heart of Dublin." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="menu-page">
+    <svg aria-hidden="true" class="sr-only" focusable="false" xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden">
+      <defs>
+        <symbol id="grito" viewBox="0 0 260 260">
+          <g transform="translate(10 10)">
+            <circle cx="120" cy="116" r="86" fill="#f6b800" stroke="#2b1a3b" stroke-width="5"/>
+            <circle cx="120" cy="116" r="78" fill="#f26b21" stroke="#2b1a3b" stroke-width="5"/>
+            <g fill="#e8478b"><circle cx="120" cy="52" r="8"/><circle cx="92" cy="58" r="6"/><circle cx="148" cy="58" r="6"/></g>
+            <g fill="#16784a"><path d="M54 112l16 4-14 10zM186 112l-16 4 14 10z"/></g>
+            <ellipse cx="120" cy="138" rx="46" ry="34" fill="#fff6e3" stroke="#2b1a3b" stroke-width="5"/>
+            <path d="M108 126h24l-12 14z" fill="#d62839" stroke="#2b1a3b" stroke-width="4" stroke-linejoin="round"/>
+            <path d="M88 148c14 20 46 20 60 0" fill="#d62839" stroke="#2b1a3b" stroke-width="5" stroke-linecap="round"/>
+            <path d="M102 158c10 12 26 12 36 0" fill="#fff6e3"/>
+            <g class="eye"><circle cx="88" cy="98" r="17" fill="#fff6e3" stroke="#2b1a3b" stroke-width="5"/><circle cx="91" cy="100" r="7" fill="#2b1a3b"/></g>
+            <g class="eye"><circle cx="152" cy="98" r="17" fill="#fff6e3" stroke="#2b1a3b" stroke-width="5"/><circle cx="155" cy="100" r="7" fill="#2b1a3b"/></g>
+            <path d="M66 62q54-26 108 0" fill="none" stroke="#f6b800" stroke-width="8" stroke-linecap="round" stroke-dasharray="2 16"/>
+          </g>
+        </symbol>
+      </defs>
+    </svg>
+
+    <div class="page-shell">
+      <header class="site-header menu-page-header">
+        <div class="container nav-wrap">
+          <a class="brand" href="index.html" aria-label="El Grito home">El Grito</a>
+          <nav class="main-nav" aria-label="Primary navigation">
+            <a href="index.html">Home</a>
+            <a href="our-story.html">Our Story</a>
+            <a href="#starters">Starters</a>
+            <a href="#main-menu">Main Menu</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#cocktails">Cocktails</a>
+            <a class="nav-cta" href="book-a-table.html">Book a Table</a>
+          </nav>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+          </button>
+        </div>
+
+        <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+          <nav aria-label="Mobile navigation">
+            <a href="index.html">Home</a>
+            <a href="our-story.html">Our Story</a>
+            <a href="#starters">Starters</a>
+            <a href="#main-menu">Main Menu</a>
+            <a href="#breakfast">Breakfast</a>
+            <a href="#desserts">Desserts</a>
+            <a href="#cocktails">Cocktails</a>
+            <a href="book-a-table.html">Book a Table</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="menu-main">
+        <section class="menu-hero">
+          <div class="container menu-hero-inner">
+            <div class="menu-hero-copy">
+              <p class="eyebrow">Mexican restaurant · Dublin</p>
+              <h1 class="menu-title">The Menu</h1>
+              <p class="menu-tagline">Mexico on a plate</p>
+              <p class="menu-intro">A loud, generous spread of tacos, starters, sweets, breakfast favourites and cocktails, built for sharing and lingering a little longer.</p>
+            </div>
+            <div class="menu-hero-art" aria-hidden="true">
+              <div class="menu-mascot-wrap">
+                <svg class="mascot" viewBox="0 0 260 260"><use href="#grito"></use></svg>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <nav class="menu-category-nav" aria-label="Menu filters">
+          <button type="button" class="filter-btn is-active" data-filter="starters">Starters</button>
+          <button type="button" class="filter-btn" data-filter="main-menu">Main Menu</button>
+          <button type="button" class="filter-btn" data-filter="breakfast">Breakfast</button>
+          <button type="button" class="filter-btn" data-filter="desserts">Desserts</button>
+          <button type="button" class="filter-btn" data-filter="cocktails">Cocktails</button>
+        </nav>
+
+        <section class="menu-category-panel is-visible" id="starters" data-category="starters">
+          <div class="container menu-panel-container">
+            <div class="menu-panel-header">
+              <div>
+                <p class="eyebrow">Starters</p>
+                <h2>Start loud</h2>
+              </div>
+              <p class="menu-panel-note">Fresh, bright and a little feisty, made for sharing before the mains arrive.</p>
+            </div>
+
+            <div class="menu-feature-layout">
+              <div class="menu-feature-image">
+                <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?auto=format&fit=crop&w=1200&q=80" alt="Shareable Mexican starter platter" />
+              </div>
+              <div class="menu-feature-copy">
+                <p class="dish-number">01</p>
+                <h3>Guacamole &amp; Chips</h3>
+                <p>House guacamole with lime, coriander and a generous stack of tortilla chips, finished with turnip, pickled onion and a hit of chilli.</p>
+              </div>
+            </div>
+
+            <div class="menu-grid">
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=80" alt="Nachos" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Fresh</span>
+                  <h3>Loaded Nachos</h3>
+                  <p>Crisp tortilla chips with beans, cheese, jalapeño, salsa roja and lime crema.</p>
+                </div>
+              </article>
+
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Quesadilla" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Cheesy</span>
+                  <h3>Quesadilla</h3>
+                  <p>Golden tortilla folded with melted cheese, grilled veg and a smoky salsa.</p>
+                </div>
+              </article>
+
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Chicken wings" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Spicy</span>
+                  <h3>Buffalo Wings</h3>
+                  <p>Sticky, fiery wings with chipotle glaze and pickled slaw on the side.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="menu-category-panel" id="main-menu" data-category="main-menu">
+          <div class="container menu-panel-container">
+            <div class="menu-panel-header">
+              <div>
+                <p class="eyebrow">Main Menu</p>
+                <h2>Comfort, fire, rhythm</h2>
+              </div>
+              <p class="menu-panel-note">Big flavours, slow-cooked meats and taco plates built for the centre of the table.</p>
+            </div>
+
+            <div class="menu-feature-layout">
+              <div class="menu-feature-image">
+                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=80" alt="Mexican taco platter" />
+              </div>
+              <div class="menu-feature-copy">
+                <p class="dish-number">02</p>
+                <h3>Birria Tacos</h3>
+                <p>Slow-braised beef in rich consommé with warm tortillas, pickled onion, coriander and a deeply savoury finish.</p>
+              </div>
+            </div>
+
+            <div class="menu-grid">
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1529006557810-274b9b2fc783?auto=format&fit=crop&w=900&q=80" alt="Tacos" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">House favourite</span>
+                  <h3>Mexican Street Tacos</h3>
+                  <p>Three tacos with your choice of filling, salsa and fresh toppings.</p>
+                </div>
+              </article>
+
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=900&q=80" alt="Burrito" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Classic</span>
+                  <h3>Chicken Burrito</h3>
+                  <p>Loaded with rice, beans, charred peppers, cheese and smoky salsa.</p>
+                </div>
+              </article>
+
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80" alt="Chile con carne" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Rich</span>
+                  <h3>Chili Chicken</h3>
+                  <p>Slow-simmered chicken in a rich chilli sauce, served with rice and beans.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="menu-category-panel" id="breakfast" data-category="breakfast">
+          <div class="container menu-panel-container">
+            <div class="menu-panel-header">
+              <div>
+                <p class="eyebrow">Breakfast</p>
+                <h2>Morning heat</h2>
+              </div>
+              <p class="menu-panel-note">A brighter, bigger start to the day with tacos, eggs and all-day favourites.</p>
+            </div>
+
+            <div class="menu-feature-layout">
+              <div class="menu-feature-image">
+                <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=1200&q=80" alt="Mexican breakfast plate" />
+              </div>
+              <div class="menu-feature-copy">
+                <p class="dish-number">03</p>
+                <h3>Breakfast Tacos</h3>
+                <p>Eggs, beans and smoky grilled fillings wrapped in soft tortillas with salsa and avocado.</p>
+              </div>
+            </div>
+
+            <div class="menu-grid">
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=900&q=80" alt="Avocado toast" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Morning</span>
+                  <h3>Avocado &amp; Egg</h3>
+                  <p>Avocado, eggs and citrus on warm toast with chilli oil and herbs.</p>
+                </div>
+              </article>
+
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1460306855393-0410f61241c7?auto=format&fit=crop&w=900&q=80" alt="Breakfast burrito" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Big start</span>
+                  <h3>Breakfast Burrito</h3>
+                  <p>Scrambled eggs, black beans, salsa and cheese wrapped in a toasted tortilla.</p>
+                </div>
+              </article>
+
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=900&q=80" alt="Hash" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Comfort</span>
+                  <h3>Hash &amp; Pico</h3>
+                  <p>Roasted potatoes, peppers and a bright pico de gallo finish.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="menu-category-panel" id="desserts" data-category="desserts">
+          <div class="container menu-panel-container">
+            <div class="menu-panel-header">
+              <div>
+                <p class="eyebrow">Desserts</p>
+                <h2>Sweet, bright finish</h2>
+              </div>
+              <p class="menu-panel-note">The kind of finishes that land with a grin and a little hush at the table.</p>
+            </div>
+
+            <div class="menu-feature-layout">
+              <div class="menu-feature-image">
+                <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=1200&q=80" alt="Churros dessert" />
+              </div>
+              <div class="menu-feature-copy">
+                <p class="dish-number">04</p>
+                <h3>Churros</h3>
+                <p>Light, crisp and dusted with cinnamon sugar, served with chocolate dipping sauce.</p>
+              </div>
+            </div>
+
+            <div class="menu-grid">
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?auto=format&fit=crop&w=900&q=80" alt="Flan dessert" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Creamy</span>
+                  <h3>Flan</h3>
+                  <p>Silky caramel custard with a delicate vanilla finish.</p>
+                </div>
+              </article>
+
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1550246144-9f273c1d5b66?auto=format&fit=crop&w=900&q=80" alt="Tres leches cake" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Soft</span>
+                  <h3>Tres Leches</h3>
+                  <p>Moist sponge soaked in three milks and topped with cream.</p>
+                </div>
+              </article>
+
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=80" alt="Cinnamon dessert" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Warm</span>
+                  <h3>Cinnamon Rice Pudding</h3>
+                  <p>Slow-cooked and softly spiced with vanilla, sugar and cinnamon.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="menu-category-panel" id="cocktails" data-category="cocktails">
+          <div class="container menu-panel-container">
+            <div class="menu-panel-header">
+              <div>
+                <p class="eyebrow">Cocktails</p>
+                <h2>Pour the energy</h2>
+              </div>
+              <p class="menu-panel-note">Big citrus, smoky spice and bright tequila pours designed for the table.</p>
+            </div>
+
+            <div class="menu-feature-layout">
+              <div class="menu-feature-image">
+                <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=1200&q=80" alt="Cocktail drinks" />
+              </div>
+              <div class="menu-feature-copy">
+                <p class="dish-number">05</p>
+                <h3>Margarita</h3>
+                <p>Tequila, lime and a bright citrus lift with a salted rim and a golden, refreshing finish.</p>
+              </div>
+            </div>
+
+            <div class="menu-grid">
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?auto=format&fit=crop&w=900&q=80" alt="Paloma cocktail" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Citrus</span>
+                  <h3>Paloma</h3>
+                  <p>Tequila, grapefruit and soda with a fresh, sharp finish.</p>
+                </div>
+              </article>
+
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1536935338788-846bb9981813?auto=format&fit=crop&w=900&q=80" alt="Mojito" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Fresh</span>
+                  <h3>Mojito</h3>
+                  <p>Mint, rum and lime with sparkling soda and a cool finish.</p>
+                </div>
+              </article>
+
+              <article class="dish-card">
+                <div class="dish-card-image"><img src="https://images.unsplash.com/photo-1546173159-315724a31696?auto=format&fit=crop&w=900&q=80" alt="Horchata" /></div>
+                <div class="dish-card-copy">
+                  <span class="dish-tag">Smooth</span>
+                  <h3>Horchata</h3>
+                  <p>Cooling rice, cinnamon and vanilla with a gentle sweet finish.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="menu-footer-cta">
+          <div class="container">
+            <div class="cta-card">
+              <div>
+                <h2>Bring the table alive.</h2>
+                <p>Book your corner, gather the crew and let the kitchen do the rest.</p>
+              </div>
+              <a class="button primary" href="tel:+35315486410">Book a table</a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const buttons = document.querySelectorAll('.filter-btn');
+        const panels = document.querySelectorAll('.menu-category-panel');
+
+        const setFilter = (filter) => {
+          buttons.forEach((button) => {
+            const active = button.dataset.filter === filter;
+            button.classList.toggle('is-active', active);
+            button.setAttribute('aria-pressed', active ? 'true' : 'false');
+          });
+
+          panels.forEach((panel) => {
+            const shouldShow = panel.dataset.category === filter;
+            panel.classList.toggle('is-visible', shouldShow);
+          });
+        };
+
+        const initialFilter = (() => {
+          const hash = location.hash.replace('#', '').trim();
+          if (hash && [...panels].some((panel) => panel.dataset.category === hash)) {
+            return hash;
+          }
+          return 'starters';
+        })();
+
+        setFilter(initialFilter);
+
+        buttons.forEach((button) => {
+          button.addEventListener('click', () => setFilter(button.dataset.filter));
+        });
+
+        if (window.gsap) {
+          gsap.from('.menu-title, .menu-tagline, .menu-intro', {
+            y: 30,
+            opacity: 0,
+            duration: 0.8,
+            stagger: 0.12,
+            ease: 'power2.out'
+          });
+
+          gsap.from('.menu-feature-layout, .dish-card', {
+            y: 24,
+            opacity: 0,
+            duration: 0.9,
+            stagger: 0.12,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: '.menu-category-panel',
+              start: 'top 80%'
+            }
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
